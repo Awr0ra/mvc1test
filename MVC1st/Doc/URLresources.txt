@@ -1,6 +1,16 @@
 ﻿Добавление проекта из Visual Studio на Github
 https://www.youtube.com/watch?v=SqarOBqIlpU
 
+
+
+
+*** Интеграция Visual Studio Code с Github 
+https://www.youtube.com/watch?v=F1bQEpwFCHc
+
+Эффективная работа с Git в Visual Studio
+https://www.youtube.com/watch?v=IFnedKcCNtc
+
+
 How to create Custom Login Registration in Asp.Net MVC 5 (Code First)
 https://www.youtube.com/watch?v=Uq0y8oxnx-8
 
