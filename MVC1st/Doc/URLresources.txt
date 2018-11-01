@@ -1,2 +1,9 @@
 ﻿Добавление проекта из Visual Studio на Github
 https://www.youtube.com/watch?v=SqarOBqIlpU
+
+
+
+
+Эффективная работа с Git в Visual Studio
+https://www.youtube.com/watch?v=IFnedKcCNtc
+
