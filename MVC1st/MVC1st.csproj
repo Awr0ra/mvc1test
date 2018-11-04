@@ -113,7 +113,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <EntityDeploy Include="Models\modelDBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>modelDBContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\modelDBContext.edmx.diagram">
+      <DependentUpon>modelDBContext.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Models\modelDBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>modelDBContext.edmx</DependentUpon>
+      <LastGenOutput>modelDBContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\modelDBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>modelDBContext.edmx</DependentUpon>
+      <LastGenOutput>modelDBContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -148,8 +165,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbMVC1st.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\modelDBContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelDBContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\modelDBContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\modelDBContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelDBContext.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>DbMVC1st.tt</DependentUpon>
+      <DependentUpon>modelDBContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

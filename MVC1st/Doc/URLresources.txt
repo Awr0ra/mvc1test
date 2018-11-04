@@ -3,6 +3,21 @@ https://www.youtube.com/watch?v=SqarOBqIlpU
 
 
 
+Dynamical connection for EF
+
+			*** Dynamically Generating Connection String for Entity Framework
+			https://www.c-sharpcorner.com/blogs/dynamically-generating-connection-string-for-entity-framework
+
+			Change the connection string dynamically for edmx Entity during run time
+			https://www.youtube.com/watch?v=ZZwngJyL1bk
+
+
+
+			C# Tutorial - Change ConnectionString at Runtime with App.config | FoxLearn
+			https://www.youtube.com/watch?v=-KdqdWTNO7Q
+
+
+
 
 *** Интеграция Visual Studio Code с Github 
 https://www.youtube.com/watch?v=F1bQEpwFCHc
