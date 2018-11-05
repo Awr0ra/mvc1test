@@ -100,37 +100,10 @@
     <Content Include="Doc\URLresources.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\DbMVC1st.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbMVC1st.edmx</DependentUpon>
-      <LastGenOutput>DbMVC1st.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DbMVC1st.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbMVC1st.edmx</DependentUpon>
-      <LastGenOutput>DbMVC1st.cs</LastGenOutput>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <EntityDeploy Include="Models\modelDBContext.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>modelDBContext.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\modelDBContext.edmx.diagram">
-      <DependentUpon>modelDBContext.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Models\modelDBContext.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modelDBContext.edmx</DependentUpon>
-      <LastGenOutput>modelDBContext.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\modelDBContext.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modelDBContext.edmx</DependentUpon>
-      <LastGenOutput>modelDBContext.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -144,57 +117,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\AwrGlobalUtil.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\SQLServerUsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\awrDBContext.cs" />
-    <Compile Include="Models\DbMVC1st.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbMVC1st.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbMVC1st.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbMVC1st.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbMVC1st.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbMVC1st.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\modelDBContext.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelDBContext.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\modelDBContext.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelDBContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\modelDBContext.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelDBContext.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs">
-      <DependentUpon>modelDBContext.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\SQLServerDBContext.cs" />
+    <Compile Include="Models\SQLServerUserAccount.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\DbMVC1st.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbMVC1st.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DbMVC1st.edmx.diagram">
-      <DependentUpon>DbMVC1st.edmx</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -203,6 +140,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\LoggedIn.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\SQLServerUsers\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
